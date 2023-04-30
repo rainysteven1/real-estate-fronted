@@ -22,7 +22,7 @@
 		</el-form-item>
 		<el-form-item class="login-animation3">
 			<el-button round type="primary" v-waves class="login-content-submit">
-				<span>{{ $t('message.mobile.btnText') }}</span>
+				<span>{{ $t('message.mobile.btnLoginText') }}</span>
 			</el-button>
 		</el-form-item>
 		<div class="font12 mt30 login-animation4 login-msg">{{ $t('message.mobile.msgText') }}</div>
