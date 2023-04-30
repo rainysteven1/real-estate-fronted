@@ -22,11 +22,11 @@
                     <div class="login-right-warp-main-form">
                         <div v-if="!state.isScan">
                             <el-tabs v-model="state.tabsActiveName">
-                                <el-tab-pane :label="$t('message.label.one1')" name="account">
-                                    <Account/>
+                                <el-tab-pane :label="$t('message.label.one1')" name="login">
+                                    <Login/>
                                 </el-tab-pane>
-                                <el-tab-pane :label="$t('message.label.two2')" name="mobile">
-                                    <Mobile/>
+                                <el-tab-pane :label="$t('message.label.two2')" name="register">
+                                    <Register/>
                                 </el-tab-pane>
                             </el-tabs>
                         </div>
@@ -52,15 +52,15 @@ import loginMain from '/@/assets/login-main.svg';
 import loginBg from '/@/assets/login-bg.svg';
 
 // 引入组件
-const Account = defineAsyncComponent(() => import('/@/views/login/component/account.vue'));
-const Mobile = defineAsyncComponent(() => import('/@/views/login/component/mobile.vue'));
+const Login = defineAsyncComponent(() => import('/@/views/login/component/login.vue'));
+const Register = defineAsyncComponent(() => import('/@/views/login/component/register.vue'));
 const Scan = defineAsyncComponent(() => import('/@/views/login/component/scan.vue'));
 
 // 定义变量内容
 const storesThemeConfig = useThemeConfig();
 const {themeConfig} = storeToRefs(storesThemeConfig);
 const state = reactive({
-    tabsActiveName: 'account',
+    tabsActiveName: 'login',
     isScan: false,
 });
 

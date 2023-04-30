@@ -1,8 +1,8 @@
 // 定义内容
 export default {
     label: {
-        one1: '用户名/邮箱登录',
-        two2: '手机登录',
+        one1: '登录',
+        two2: '注册',
     },
     link: {
         one3: '第三方登录',
@@ -14,11 +14,11 @@ export default {
         placeholder3: '请输入验证码',
         btnLoginText: '登 录',
     },
-    mobile: {
-        placeholder1: '请输入手机号',
-        placeholder2: '请输入验证码',
+    register: {
+        placeholder1: '请输入网易邮箱号',
+        placeholder2: '请输入8-16位密码,包含字母和数字',
         codeText: '获取验证码',
-        btnLoginText: '登 录',
+        btnText: '注 册',
         msgText: '* 温馨提示：建议使用谷歌、Microsoft Edge，版本 79.0.1072.62 及以上浏览器，360浏览器请使用极速模式',
     },
     scan: {
